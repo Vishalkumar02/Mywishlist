@@ -1,0 +1,221 @@
+
+   body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+  }
+  
+  h1{
+    text-align: center;
+    color:white;
+    padding: 20px;
+    font-size: 24px;
+    transition: all 0.3s ease;
+  }
+  h2 {
+    text-align: center;
+    color:black;
+    padding: 20px;
+    font-size: 24px;
+    transition: all 0.3s ease;
+  }
+  .welcome-message h2 {
+    font-size: 36px;
+    margin: 0;
+  }
+  .intro p {
+    text-align: center;
+  }
+
+  
+  #product-container,
+  #wishlist-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1px;
+    margin : 10px
+  }
+  
+  .product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33.33% - 40px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.5s ease;
+    border-radius: 10px; /* Rounded corners */
+  }
+  .wishlist-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33.33% - 40px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.5s ease;
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .product:hover,
+  .wishlist-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product img,
+  .wishlist-item img {
+    width: 350px; /* Increase the width */
+    height: 300px; /* Increase the height */
+    object-fit: cover;
+    border-radius: 2px;
+  }
+  .product a {
+    color: white;
+  }
+  
+  .add-to-wishlist,
+  .remove-from-wishlist {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .add-to-wishlist {
+    background-color: white; /* Green */
+    color: black;
+  }
+  
+  .add-to-wishlist:hover {
+    background-color: rgb(114, 226, 114);
+  }
+  
+  .remove-from-wishlist {
+    background-color: white; 
+    color: black;
+  }
+  
+  .remove-from-wishlist:hover {
+    background-color: #f14848;
+  }
+  #wishlist-container {
+    text-align: center;
+  }
+  
+  #wishlist-container h2 {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+  
+  /* Existing CSS code... */
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+  }
+  
+  .nav-logo h1 {
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-links a {
+    margin: 0 10px;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #45a049;
+  }
+  
+  
+  main {
+    margin: 20px;
+  }
+  
+  footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-left h3 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .footer-left p {
+    margin: 5px 0;
+  }
+  
+  .footer-right {
+    text-align: right;
+  }
+  
+  .footer-right p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-right li {
+    margin-bottom: 5px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+  
+    .footer-left {
+      margin-bottom: 10px;
+    }
+  }
